@@ -1,0 +1,377 @@
+/* ===========================
+   Spam SMS Detection
+   Professional Responsive UI
+=========================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(135deg,#a866ea,#4ba27e);
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    padding:20px;
+
+}
+
+/* Container */
+
+.container{
+
+    width:100%;
+
+    max-width:900px;
+
+}
+
+/* Card */
+
+.card{
+
+    background:#ffffff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 50px rgba(0, 0, 0, 0.402);
+
+    animation:fadeIn .8s ease;
+
+}
+
+/* Heading */
+
+h1{
+
+    text-align:center;
+
+    color:#333;
+
+    margin-bottom:15px;
+
+    font-size:40px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:30px;
+
+    line-height:1.7;
+
+}
+
+/* Label */
+
+.label{
+
+    display:block;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+    color:#444;
+
+}
+
+/* Textarea */
+
+textarea{
+
+    width:100%;
+
+    min-height:180px;
+
+    resize:vertical;
+
+    padding:18px;
+
+    border:2px solid #ddd;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+textarea:focus{
+
+    border-color:#667eea;
+
+    box-shadow:0 0 12px rgba(102,126,234,.3);
+
+}
+
+/* Button */
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:20px;
+
+    background:#667eea;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#5568db;
+
+    transform:translateY(-2px);
+
+}
+
+/* Result Card */
+
+.result{
+
+    margin-top:30px;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    animation:fadeIn .5s;
+
+}
+
+.result h2{
+
+    margin-bottom:10px;
+
+}
+
+.result p{
+
+    line-height:1.8;
+
+}
+
+/* Success */
+
+.success{
+
+    background:#e8fff0;
+
+    border:2px solid #28a745;
+
+    color:#155724;
+
+}
+
+/* Danger */
+
+.danger{
+
+    background:#ffeaea;
+
+    border:2px solid #dc3545;
+
+    color:#721c24;
+
+}
+
+/* Emoji */
+
+.emoji{
+
+    font-size:60px;
+
+    margin-bottom:15px;
+
+}
+
+/* Footer */
+
+footer{
+
+    margin-top:30px;
+
+    color:#fff;
+
+    text-align:center;
+
+    font-size:15px;
+
+}
+
+/* Animation */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Responsive */
+
+@media screen and (max-width:768px){
+
+    .card{
+
+        padding:25px;
+
+    }
+
+    h1{
+
+        font-size:30px;
+
+    }
+
+    textarea{
+
+        min-height:150px;
+
+        font-size:15px;
+
+    }
+
+    button{
+
+        font-size:16px;
+
+    }
+
+}
+
+@media screen and (max-width:480px){
+
+    body{
+
+        padding:15px;
+
+    }
+
+    .card{
+
+        padding:20px;
+
+    }
+
+    h1{
+
+        font-size:24px;
+
+    }
+
+    .subtitle{
+
+        font-size:14px;
+
+    }
+
+    textarea{
+
+        min-height:130px;
+
+    }
+
+}
+
+/* Utility Classes */
+
+.mt10{
+    margin-top:10px;
+}
+
+.mt20{
+    margin-top:20px;
+}
+
+.mb10{
+    margin-bottom:10px;
+}
+
+.mb20{
+    margin-bottom:20px;
+}
+
+.center{
+    text-align:center;
+}
+
+.shadow{
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.round{
+    border-radius:12px;
+}
+
+.w100{
+    width:100%;
+}
+
+.hidden{
+    display:none;
+}
+
+.visible{
+    display:block;
+}
