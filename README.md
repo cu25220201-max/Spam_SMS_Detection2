@@ -131,7 +131,9 @@ View results in real-time
 
 
 ### 👨‍💻 Author
-Name: Pratiksha Tomar
-Project Type: Machine Learning codsoft Internship Project
+## Pratiksha Tomar
+
+
+Machine Learning codsoft Internship Project
 
 
