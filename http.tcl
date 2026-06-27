@@ -1,11 +1,3 @@
-# http.tcl
-# Client-side HTTP for GET, POST, and HEAD commands.
-# These routines can be used in untrusted code that uses the Safesock
-# security policy.
-# These procedures use a callback interface to avoid using vwait,
-# which is not defined in the safe base.
-#
-# See the http.n man page for documentation
 
 package provide http 1.0
 
@@ -145,12 +137,7 @@ proc http_get { url args } {
     }
     set state(sock) $s
 
-    # Send data in cr-lf format, but accept any line terminators
-
     fconfigure $s -translation {auto crlf} -buffersize $state(-blocksize)
-
-    # The following is disallowed in safe interpreters, but the socket
-    # is already in non-blocking mode in that case.
 
     catch {fconfigure $s -blocking off}
     set len 0
@@ -316,9 +303,6 @@ proc http_wait {token} {
     return $state(status)
 }
 
-# Call http_formatQuery with an even number of arguments, where the first is
-# a name, the second is a value, the third is another name, and so on.
-
 proc http_formatQuery {args} {
     set result ""
     set sep ""
@@ -332,14 +316,6 @@ proc http_formatQuery {args} {
     }
     return $result
 }
-
-# do x-www-urlencoded character mapping
-# The spec says: "non-alphanumeric characters are replaced by '%HH'"
-# 1 leave alphanumerics characters alone
-# 2 Convert every other character to an array lookup
-# 3 Escape constructs that are "special" to the tcl parser
-# 4 "subst" the result, doing all the array substitutions
-
  proc httpMapReply {string} {
     global httpFormMap
     set alphanumeric	a-zA-Z0-9
@@ -363,7 +339,6 @@ proc http_formatQuery {args} {
     return [subst $string]
 }
 
-# Default proxy filter.
  proc httpProxyRequired {host} {
     global http
     if {[info exists http(-proxyhost)] && [string length $http(-proxyhost)]} {
