@@ -1,11 +1,6 @@
 import os
 import sys
 import pickle
-
-# ------------------------------------
-# Add project root to Python path
-# ------------------------------------
-
 BASE_DIR = os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))
 )
@@ -13,11 +8,6 @@ BASE_DIR = os.path.dirname(
 sys.path.append(BASE_DIR)
 
 from src.utils import clean_text
-
-# ------------------------------------
-# Model Paths
-# ------------------------------------
-
 MODEL_PATH = os.path.join(
     BASE_DIR,
     "models",
@@ -30,10 +20,6 @@ VECTORIZER_PATH = os.path.join(
     "tfidf_vectorizer.pkl"
 )
 
-# ------------------------------------
-# Check Files
-# ------------------------------------
-
 if not os.path.exists(MODEL_PATH):
     raise FileNotFoundError(
         "spam_model.pkl not found. Run train_model.py first."
@@ -44,19 +30,11 @@ if not os.path.exists(VECTORIZER_PATH):
         "tfidf_vectorizer.pkl not found. Run train_model.py first."
     )
 
-# ------------------------------------
-# Load Model
-# ------------------------------------
-
 with open(MODEL_PATH, "rb") as file:
     model = pickle.load(file)
 
 with open(VECTORIZER_PATH, "rb") as file:
     vectorizer = pickle.load(file)
-
-# ------------------------------------
-# Prediction Function
-# ------------------------------------
 
 def predict_sms(message):
 
@@ -67,10 +45,6 @@ def predict_sms(message):
     prediction = model.predict(vector)[0]
 
     return prediction
-
-# ------------------------------------
-# Test Cases
-# ------------------------------------
 
 def test_spam_message():
 
@@ -88,11 +62,6 @@ def test_ham_message():
     prediction = predict_sms(message)
 
     assert prediction == 0
-
-
-# ------------------------------------
-# Main
-# ------------------------------------
 
 if __name__ == "__main__":
 
