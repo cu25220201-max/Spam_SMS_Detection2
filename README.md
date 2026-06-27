@@ -19,7 +19,7 @@ It uses **Natural Language Processing (NLP)** techniques to clean and process te
 
 The project also includes a **Flask web application** for real-time message classification.
 
----
+
 
 ## 🎯 Objective
 
@@ -28,7 +28,6 @@ The main goal of this project is to:
 - Reduce unwanted messages
 - Improve SMS filtering using AI/ML
 
----
 
 ## 🛠️ Technologies Used
 
@@ -40,7 +39,6 @@ The main goal of this project is to:
 - Flask 🌐
 - Jupyter Notebook 📓
 
----
 
 ## 📁 Project Structure
 
@@ -62,9 +60,6 @@ Spam_SMS_Detection2/
 ├── requirements.txt
 └── README.md
 ```
-
-
----
 
 ## ⚙️ Installation Guide
 
@@ -125,8 +120,10 @@ View results in real-time
 <img width="621" height="449" alt="image" src="https://github.com/user-attachments/assets/ecfaa48a-f7a3-43dd-a976-bc9390291bca" />
 
 
-<img width="956" height="424" alt="image" src="https://github.com/user-attachments/assets/eaff2907-6d5f-47a0-85e9-b49e924634bd" />
+<img width="956" height="431" alt="image" src="https://github.com/user-attachments/assets/41846f25-462a-4a37-82c6-b3424189a9e7" />
 
+
+<img width="960" height="507" alt="image" src="https://github.com/user-attachments/assets/b8b480cf-65a7-4fea-b7db-5c8af0f17f5b" />
 
 
 
