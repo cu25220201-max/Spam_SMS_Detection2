@@ -1,20 +1,11 @@
-/* ===========================
-   Spam SMS Detection
-   Professional Responsive UI
-=========================== */
 
-/* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-/* Reset */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-
-/* Body */
 
 body{
 
@@ -46,7 +37,6 @@ body{
 
 }
 
-/* Card */
 
 .card{
 
@@ -61,8 +51,6 @@ body{
     animation:fadeIn .8s ease;
 
 }
-
-/* Heading */
 
 h1{
 
@@ -88,8 +76,6 @@ h1{
 
 }
 
-/* Label */
-
 .label{
 
     display:block;
@@ -101,8 +87,6 @@ h1{
     color:#444;
 
 }
-
-/* Textarea */
 
 textarea{
 
@@ -134,7 +118,6 @@ textarea:focus{
 
 }
 
-/* Button */
 
 button{
 
@@ -169,8 +152,6 @@ button:hover{
     transform:translateY(-2px);
 
 }
-
-/* Result Card */
 
 .result{
 
@@ -210,8 +191,6 @@ button:hover{
 
 }
 
-/* Danger */
-
 .danger{
 
     background:#ffeaea;
@@ -221,9 +200,6 @@ button:hover{
     color:#721c24;
 
 }
-
-/* Emoji */
-
 .emoji{
 
     font-size:60px;
@@ -231,9 +207,6 @@ button:hover{
     margin-bottom:15px;
 
 }
-
-/* Footer */
-
 footer{
 
     margin-top:30px;
@@ -245,8 +218,6 @@ footer{
     font-size:15px;
 
 }
-
-/* Animation */
 
 @keyframes fadeIn{
 
@@ -267,8 +238,6 @@ footer{
     }
 
 }
-
-/* Responsive */
 
 @media screen and (max-width:768px){
 
